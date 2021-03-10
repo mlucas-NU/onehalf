@@ -17,7 +17,7 @@ let g:colors_name="onehalfdark"
 let colors_name="onehalfdark"
 
 
-let s:black       = { "gui": "#282c34", "cterm": "236" }
+let s:black       = { "gui": "#000000", "cterm": "0" }
 let s:red         = { "gui": "#e06c75", "cterm": "168" }
 let s:green       = { "gui": "#98c379", "cterm": "114" }
 let s:yellow      = { "gui": "#e5c07b", "cterm": "180" }
@@ -109,9 +109,9 @@ call s:h("Directory", s:blue, "", "")
 call s:h("VertSplit", s:vertsplit, s:vertsplit, "")
 call s:h("Folded", s:fg, "", "")
 call s:h("FoldColumn", s:fg, "", "")
-call s:h("SignColumn", s:fg, "", "")
+call s:h("SignColumn", s:fg, s:gutter_bg, "")
 
-call s:h("MatchParen", s:blue, "", "underline")
+call s:h("MatchParen", s:purple, "", "underline")
 call s:h("SpecialKey", s:fg, "", "")
 call s:h("Title", s:green, "", "")
 call s:h("WildMenu", s:fg, "", "")
